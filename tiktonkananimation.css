@@ -1,0 +1,175 @@
+.head {
+    width: 120px;
+    height: 150px;
+    border-radius: 100px;
+    margin: auto;
+    background-color: brown;
+    padding: 10px 10px 10px 10px;
+}
+
+.righteye {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: auto;
+    float: left;
+    padding-top: 2px;
+}
+
+.lefteye {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: auto;
+    float: right;
+    padding: 2px;
+}
+
+.rightball,
+.lefttball {
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.nose {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    margin: auto;
+    border-radius: 50% 50% 0 0;
+}
+
+.mouth {
+    width: 40px;
+    height: 10px;
+    border-radius: 50% 50% 50% 50%;
+    background: #fff;
+    margin: auto;
+}
+
+.body {
+    width: 200px;
+    height: 250px;
+    background: brown;
+    margin: auto;
+    margin-left: -50px;
+    border-radius: 70px;
+}
+
+.righthand {
+    width: 25px;
+    height: 240px;
+    background: brown;
+    float: left;
+    position: absolute;
+    margin-top: -280px;
+    margin-left: -50px;
+    border-radius: 20px;
+    transform: rotate(50deg);
+}
+
+.lefthand {
+    width: 25px;
+    height: 240px;
+    background: brown;
+    float: right;
+    position: absolute;
+    margin-top: -280px;
+    margin-left: 130px;
+    border-radius: 20px;
+    transform: rotate(300deg);
+    animation-name: handtransform;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes handtransform {
+    0% {
+        transform: rotate(100deg);
+    }
+    20% {
+        transform: rotate(100deg);
+    }
+    40% {
+        transform: rotate(100deg);
+    }
+    60% {
+        transform: rotate(100deg);
+    }
+    80% {
+        transform: rotate(200deg);
+    }
+    90% {
+        transform: rotate(250deg);
+    }
+    100% {
+        transform: rotate(300deg);
+    }
+}
+
+.rightleg {
+    width: 25px;
+    height: 200px;
+    background: brown;
+    float: left;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -50px;
+    border-radius: 20px;
+    transform: rotate(10deg);
+}
+
+.leftleg {
+    width: 25px;
+    height: 200px;
+    background: brown;
+    float: left;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 120px;
+    border-radius: 20px;
+    transform: rotate(-10deg);
+}
+
+.text {
+    color: navy;
+    position: absolute;
+    transform: rotate(290deg);
+    animation-name: transform;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes transform {
+    0% {
+        transform: rotate(10deg);
+    }
+    20% {
+        transform: rotate(50deg);
+    }
+    40% {
+        transform: rotate(100deg);
+    }
+    60% {
+        transform: rotate(150deg);
+    }
+    80% {
+        transform: rotate(200deg);
+    }
+    100% {
+        transform: rotate(250deg);
+    }
+}
+
+body {
+    background: linear-gradient( lightgrey, silver, whitesmoke, white, rgb(33, 85, 4));
+    background-repeat: no-repeat;
+    height: 100vh;
+}
